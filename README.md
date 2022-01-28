@@ -1,20 +1,20 @@
-import java.util.*;
-
-public class TicTacToe{
-	static String[] board = new String[9]; // array for board
-	static int count1 = 0; // variable to count player 1's total incorrect entries
-	static int count2 = 0; // variable to count player 2's total incorrect entries
-	static int consecutive1 = 0; // variable to count player 1's consecutive incorrect entries
-	static int consecutive2 = 0; // variable to count player 2's consecutive incorrect entries
-	static int help1 = 0; // variable to count player 1's CPU assist
-	static int help2 = 0; // variable to count player 2's CPU assist
-	static int p1LastMove = 0; // variable to keep track of player 1's last move
-	static int p2LastMove = 0; // variable to keep track of player 2's last move
-	static String winner = null; // variable to keep track of the winner
-	static boolean forfeit = false; 
-	static int cpuRound = 1; // variable to count the number of CPU's moves
-	static int[] cornerSpaces = {0, 2, 6, 8};
-
+	import java.util.*;
+	
+	public class TicTacToe{
+		static String[] board = new String[9]; // array for board
+		static int count1 = 0; // variable to count player 1's total incorrect entries
+		static int count2 = 0; // variable to count player 2's total incorrect entries
+		static int consecutive1 = 0; // variable to count player 1's consecutive incorrect entries
+		static int consecutive2 = 0; // variable to count player 2's consecutive incorrect entries
+		static int help1 = 0; // variable to count player 1's CPU assist
+		static int help2 = 0; // variable to count player 2's CPU assist
+		static int p1LastMove = 0; // variable to keep track of player 1's last move
+		static int p2LastMove = 0; // variable to keep track of player 2's last move
+		static String winner = null; // variable to keep track of the winner
+		static boolean forfeit = false; 
+		static int cpuRound = 1; // variable to count the number of CPU's moves
+		static int[] cornerSpaces = {0, 2, 6, 8};
+	
 	public static void main(String[] args){
 		fillEmptyBoard(); // call fillEmptyBoard() method
 		Scanner input = new Scanner(System.in); // create a Scanner object
